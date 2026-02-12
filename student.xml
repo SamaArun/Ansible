@@ -1,0 +1,16 @@
+<Student> --> object
+	<Firstname>arun</Firstname>  ##--> field
+	<Lastname>s</Lastname>
+	<DOB>2026-01-01</DOB>
+	<Addresses> ##-->object
+		<PermAddress> ##-->object
+			<DoorNo>100</DoorNo>
+			<Street>Nagar</Street>
+		</PermAddress>
+		<CurrentAddress>
+			<DoorNo>100</DoorNo>
+			<Street>Nagar</Street>
+		</CurrentAddress>
+	</Addresses>
+</Student>
+
