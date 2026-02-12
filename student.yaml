@@ -1,0 +1,23 @@
+
+- firstname: arun
+  lastname: s
+  email: arun@gmail.com
+  addresses: # list of addresses
+    - type: perm
+      doorNo: 100
+      street: Nagar
+    - type: current
+      doorNo: 143
+      street: Nagar
+
+- firstname: arun
+  lastname: s
+  email: info@gmail.com
+  addresses: # list of addresses
+    - type: perm
+      doorNo: 143
+      street: Nagar
+    - type: current
+      doorNo: 200
+      street: Nagar
+
