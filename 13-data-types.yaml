@@ -14,6 +14,6 @@
       SCRIPTING: "shell, Ansible, Terraform, python"
   tasks:
   - name: print course information
-  ansible.builtin.debug:
+    ansible.builtin.debug:
     msg: "Course is: {{ COURSE }}, Duration is: {{ DURATION , is Live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, COncepts are: {{ CONCEPTS }}"
 
