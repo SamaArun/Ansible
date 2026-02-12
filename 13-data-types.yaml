@@ -1,6 +1,6 @@
 - name: ansible datetypes
   hosts: local
-  connection: locall
+  connection: local
   vars:
     DURATION: 120 #this is number
     COURSE: "Devops with AWS" #string
