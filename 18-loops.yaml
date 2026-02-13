@@ -8,6 +8,6 @@
         name: "{{ item }}"
         state: present
       loop:
-        - mysql-server
+        - mariadb105-server
         - nginx
         - zip
