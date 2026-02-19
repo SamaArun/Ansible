@@ -18,3 +18,9 @@
       msg: "user already exists"
     when: output.rc == 0 #it means above task failure
 
+
+# #ansible error handling
+# ======================
+# Error handling means what should we do when error comes, what should we do when error not comes.
+
+# if we are able to handle the error, we can keep ignore_errors true and then execute another task in case of failure
