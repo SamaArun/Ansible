@@ -1,0 +1,26 @@
+- name: amazon.aws.aws_ec2
+  regions:
+  - us-east-1
+  keyed_groups:
+  # add hosts to tag_Name_value groups for each aws_ec2 host's tags.Name variable.
+  - key: tags.Name #dynamic-frontend
+    prefix: "dynamic"
+    separator: "-"  #output:dynamic_frontend and Ip address
+  filters:
+    tag:Name: frontend
+    instance-state-name : running
+  hostnames:
+  # You can also specify a list in order of precedence for hostname variables.
+  - ip-address
+  - private-ip-address
+  compose:
+  # This sets the `ansible_host` variable to connect with the private IP address without changing the hostname.
+  ansible_host: private_ip_address
+
+  #Now the output of ansible-inventory -i demo(filename).aws_ec2.yml --graph
+
+  #ansible aws dynamic inventory#https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/aws_ec2_guide.
+  
+  #Ansible can query the cloud provider to fetch hosts at run time, this will be useful in the autoscaling kind of dynamic environments.
+
+
